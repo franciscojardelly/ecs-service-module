@@ -74,3 +74,12 @@ variable "scale_in_period" {}
 variable "scale_in_evaluation_periods" {}
 
 variable "scale_in_cooldown" {}
+
+### (Tracking CPU) - Esse parametro vc específica quanto de uso de CPU sua app vai manter de uso 
+### Ex: Específicando 50% sua app vai escalar de forma que o consumo de CPU vai se manter em 50% 
+variable "scale_tracking_cpu" {}
+
+### tracking Requests
+variable "alb_arn" {}
+
+variable "scale_tracking_requests" {}
